@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controler-->
+        <scene sceneID="RVE-3w-X9i">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewControler" id="HKd-lB-43F" customClass="HomeViewControler" customModule="Monkey_davaleba25_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t7E-tx-4kM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="0VI-kk-com">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monkey" translatesAutoresizingMaskIntoConstraints="NO" id="cdM-V1-aTV">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="D8Z-u0-qAI"/>
+                                    <constraint firstAttribute="height" constant="150" id="XAH-IK-HqD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sC2-vf-mhb" appends="YES" id="zvI-pI-Dt1"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEu-Mh-XuE">
+                                <rect key="frame" x="142" y="143" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="L98-Cx-cjE"/>
+                                    <constraint firstAttribute="width" constant="130" id="PQe-eb-JfL"/>
+                                </constraints>
+                                <state key="normal" image="banana"/>
+                                <connections>
+                                    <action selector="banana:" destination="HKd-lB-43F" eventType="touchUpInside" id="lGf-t7-tLU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOM-Oq-ekx">
+                                <rect key="frame" x="20" y="54" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="27"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH4-fs-UcM">
+                                <rect key="frame" x="394" y="10" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="27"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5WT-e6-ejE" firstAttribute="trailing" secondItem="0VI-kk-com" secondAttribute="trailing" id="469-7W-Bwc"/>
+                            <constraint firstItem="cdM-V1-aTV" firstAttribute="centerY" secondItem="t7E-tx-4kM" secondAttribute="centerY" id="46E-G4-u0u"/>
+                            <constraint firstItem="TOM-Oq-ekx" firstAttribute="leading" secondItem="5WT-e6-ejE" secondAttribute="leading" constant="20" id="4Yk-e4-sNw"/>
+                            <constraint firstItem="vH4-fs-UcM" firstAttribute="top" secondItem="t7E-tx-4kM" secondAttribute="top" constant="10" id="6ND-jN-5tX"/>
+                            <constraint firstItem="BEu-Mh-XuE" firstAttribute="centerX" secondItem="t7E-tx-4kM" secondAttribute="centerX" id="Hnb-vl-s3e"/>
+                            <constraint firstAttribute="trailing" secondItem="vH4-fs-UcM" secondAttribute="trailing" constant="20" id="OED-9m-D3U"/>
+                            <constraint firstItem="TOM-Oq-ekx" firstAttribute="top" secondItem="5WT-e6-ejE" secondAttribute="top" constant="10" id="Ok3-Pi-DqT"/>
+                            <constraint firstItem="0VI-kk-com" firstAttribute="leading" secondItem="5WT-e6-ejE" secondAttribute="leading" id="c2c-1b-QPO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0VI-kk-com" secondAttribute="bottom" constant="-34" id="olc-WL-5IR"/>
+                            <constraint firstItem="cdM-V1-aTV" firstAttribute="centerX" secondItem="t7E-tx-4kM" secondAttribute="centerX" id="qtN-FD-Tjs"/>
+                            <constraint firstItem="0VI-kk-com" firstAttribute="top" secondItem="t7E-tx-4kM" secondAttribute="top" id="ubO-0L-nMO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5WT-e6-ejE"/>
+                    </view>
+                    <connections>
+                        <outlet property="Score" destination="TOM-Oq-ekx" id="6vb-XU-JGj"/>
+                        <outlet property="bananas" destination="BEu-Mh-XuE" id="BMi-Dn-gKI"/>
+                        <outlet property="cordinateLable" destination="vH4-fs-UcM" id="vja-Sd-ZhV"/>
+                        <outlet property="mokeyImage" destination="cdM-V1-aTV" id="VUQ-2b-jLJ"/>
+                        <outlet property="monkey" destination="sC2-vf-mhb" id="YyI-fi-yB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zo3-fB-d1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sC2-vf-mhb">
+                    <connections>
+                        <action selector="monkey:" destination="HKd-lB-43F" id="6ea-Ue-I69"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="442.02898550724643" y="-240.40178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Monkey" width="226" height="204"/>
+        <image name="banana" width="885" height="825"/>
+        <image name="images" width="1100" height="1318"/>
+    </resources>
+</document>
